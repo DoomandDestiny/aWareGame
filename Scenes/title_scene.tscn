@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://cgypltphr3ed2"]
+
+[ext_resource type="Texture2D" uid="uid://b2ahqv6p2xh6y" path="res://25WFN5QK3VJIFBPAPDXTDG3PMM.webp" id="1_68ljo"]
+[ext_resource type="Script" uid="uid://56807ar7mkhs" path="res://Scenes/title_scene.gd" id="1_b6ftn"]
+
+[node name="TitleScreen" type="Node2D" unique_id=1787429532]
+script = ExtResource("1_b6ftn")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=341097848]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_68ljo")
+
+[node name="Title" type="RichTextLabel" parent="." unique_id=470073760]
+clip_contents = false
+offset_left = 257.0
+offset_top = 23.0
+offset_right = 934.0
+offset_bottom = 214.0
+theme_override_constants/outline_size = 40
+theme_override_constants/text_highlight_v_padding = 3
+theme_override_font_sizes/normal_font_size = 108
+text = "aWare Game"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1015645978]
+offset_left = 468.0
+offset_top = 193.0
+offset_right = 749.0
+offset_bottom = 526.0
+
+[node name="Start" type="Button" parent="VBoxContainer" unique_id=995623482]
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "Start Game"
+
+[node name="Settings" type="Button" parent="VBoxContainer" unique_id=2129667177]
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "Settings"
+
+[node name="Quit" type="Button" parent="VBoxContainer" unique_id=281811832]
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "Quit"
+
+[connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="VBoxContainer/Settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_start_3_pressed"]
