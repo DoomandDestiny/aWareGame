@@ -1,8 +1,23 @@
 [gd_scene format=3 uid="uid://cxiad8474piyr"]
 
+[ext_resource type="Script" uid="uid://cg7h0g7umlsa2" path="res://Scenes/settings_scene.gd" id="1_amiku"]
+[ext_resource type="Texture2D" uid="uid://3j208lv24rdl" path="res://Untitled design.png" id="1_cmf5w"]
+
+[sub_resource type="VideoStreamTheora" id="VideoStreamTheora_ogwx3"]
+file = "res://Rick_Astley_Never_Gonna_Give_You_Up.ogv"
+
 [sub_resource type="CanvasTexture" id="CanvasTexture_ogwx3"]
 
 [node name="settings_scene" type="Node2D" unique_id=964637912]
+script = ExtResource("1_amiku")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=927225100]
+offset_left = 157.0
+offset_top = 25.0
+offset_right = 557.0
+offset_bottom = 325.0
+stream = SubResource("VideoStreamTheora_ogwx3")
+autoplay = true
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=730597440]
 offset_left = 157.0
@@ -10,3 +25,22 @@ offset_top = 25.0
 offset_right = 486.0
 offset_bottom = 251.0
 texture = SubResource("CanvasTexture_ogwx3")
+
+[node name="TextureRect" type="TextureRect" parent="TextureRect" unique_id=983486322]
+layout_mode = 0
+offset_left = -157.0
+offset_top = 1853.0
+offset_right = 1763.0
+offset_bottom = 3973.1353
+rotation = -1.5707964
+texture = ExtResource("1_cmf5w")
+
+[node name="Button" type="Button" parent="." unique_id=53667876]
+offset_left = 490.00006
+offset_top = 350.0
+offset_right = 535.00006
+offset_bottom = 381.0
+scale = Vector2(4.024493, 3.8920863)
+text = "Back"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

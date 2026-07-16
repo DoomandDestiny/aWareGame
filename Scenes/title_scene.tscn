@@ -7,23 +7,24 @@
 script = ExtResource("1_b6ftn")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=481609081]
-offset_left = -21.0
-offset_top = 1863.0
-offset_right = 1899.0
-offset_bottom = 3983.1353
+offset_left = -24.0
+offset_top = 1888.0
+offset_right = 1896.0
+offset_bottom = 4008.1353
 rotation = -1.5707964
 texture = ExtResource("2_b6ftn")
 
 [node name="Title" type="RichTextLabel" parent="." unique_id=470073760]
 clip_contents = false
-offset_left = 257.0
-offset_top = 23.0
-offset_right = 934.0
-offset_bottom = 214.0
+offset_left = 149.0
+offset_top = 17.0
+offset_right = 1028.0
+offset_bottom = 208.0
+theme_override_colors/default_color = Color(1, 0.5937962, 0.52454215, 1)
 theme_override_constants/outline_size = 40
 theme_override_constants/text_highlight_v_padding = 3
 theme_override_font_sizes/normal_font_size = 108
-text = "aWare Game"
+text = "Minigame Mania"
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1015645978]
 offset_left = 468.0
