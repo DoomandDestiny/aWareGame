@@ -1,3 +1,61 @@
 [gd_scene format=3 uid="uid://decnxoore5oqb"]
 
+[ext_resource type="Script" uid="uid://bubtwo7hoqdx3" path="res://Scenes/level_scene.gd" id="1_c7xwe"]
+[ext_resource type="Texture2D" uid="uid://3j208lv24rdl" path="res://Untitled design.png" id="1_rol8n"]
+[ext_resource type="Texture2D" uid="uid://cenp6e26gugg4" path="res://downloadcropped.png" id="2_cn3xy"]
+
 [node name="level_scene" type="Node2D" unique_id=522059323]
+script = ExtResource("1_c7xwe")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1178092051]
+offset_left = -12.0
+offset_top = -45.0
+offset_right = 1908.0
+offset_bottom = 1722.0
+texture = ExtResource("1_rol8n")
+
+[node name="LifeContainer" type="HBoxContainer" parent="." unique_id=975176371]
+offset_left = 134.00005
+offset_top = 102.0
+offset_right = 1470.0
+offset_bottom = 482.0
+scale = Vector2(0.64999956, 0.5200005)
+
+[node name="Heart" type="TextureRect" parent="LifeContainer" unique_id=2029164220]
+layout_mode = 2
+texture = ExtResource("2_cn3xy")
+
+[node name="Heart2" type="TextureRect" parent="LifeContainer" unique_id=1551929622]
+layout_mode = 2
+texture = ExtResource("2_cn3xy")
+
+[node name="Heart3" type="TextureRect" parent="LifeContainer" unique_id=275964150]
+layout_mode = 2
+texture = ExtResource("2_cn3xy")
+
+[node name="Heart4" type="TextureRect" parent="LifeContainer" unique_id=919900495]
+layout_mode = 2
+texture = ExtResource("2_cn3xy")
+
+[node name="Heart5" type="TextureRect" parent="LifeContainer" unique_id=2004402179]
+layout_mode = 2
+texture = ExtResource("2_cn3xy")
+
+[node name="Level" type="RichTextLabel" parent="." unique_id=1073600644]
+offset_left = 43.0
+offset_top = 418.0
+offset_right = 202.0
+offset_bottom = 481.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 42
+text = "Level #"
+
+[node name="Timer" type="RichTextLabel" parent="." unique_id=405221380]
+clip_contents = false
+offset_left = 539.0
+offset_top = 540.0
+offset_right = 605.0
+offset_bottom = 601.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 42
+text = "0.0"

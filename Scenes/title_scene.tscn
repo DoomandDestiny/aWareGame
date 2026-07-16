@@ -1,15 +1,18 @@
 [gd_scene format=3 uid="uid://cgypltphr3ed2"]
 
-[ext_resource type="Texture2D" uid="uid://b2ahqv6p2xh6y" path="res://25WFN5QK3VJIFBPAPDXTDG3PMM.webp" id="1_68ljo"]
 [ext_resource type="Script" uid="uid://56807ar7mkhs" path="res://Scenes/title_scene.gd" id="1_b6ftn"]
+[ext_resource type="Texture2D" uid="uid://3j208lv24rdl" path="res://Untitled design.png" id="2_b6ftn"]
 
 [node name="TitleScreen" type="Node2D" unique_id=1787429532]
 script = ExtResource("1_b6ftn")
 
-[node name="TextureRect" type="TextureRect" parent="." unique_id=341097848]
-offset_right = 40.0
-offset_bottom = 40.0
-texture = ExtResource("1_68ljo")
+[node name="TextureRect" type="TextureRect" parent="." unique_id=481609081]
+offset_left = -21.0
+offset_top = 1863.0
+offset_right = 1899.0
+offset_bottom = 3983.1353
+rotation = -1.5707964
+texture = ExtResource("2_b6ftn")
 
 [node name="Title" type="RichTextLabel" parent="." unique_id=470073760]
 clip_contents = false
